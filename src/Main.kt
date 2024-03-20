@@ -14,7 +14,7 @@
 //Qn8.How old will I be next year if I'm currently 22(solve using kotlin functions and operations)
 //Qn9.Write a function that takes in a name and prints out "That's me!" when your name is passed to it, otherwise it prints out "I don't know who that is"
 //Qn10.Implement a kotlin program that declares the variable of a temperature of type double and assigns it a temperature value. Then print a message saying "The temperature is [temperature] degrees celcius
-
+//Qn11.
 fun main() {
 
     //Qn1.
@@ -45,8 +45,6 @@ fun main() {
     //Qn7
     sentence("Pearl", 23)
 
-    //Qn8
-    //age(22)
 
 
     //Qn9
@@ -98,8 +96,7 @@ fun sentence(name:String, age:Int): String {
     return sentence
 }
 
-//Qn.8
-//fun age(num: Int): Int {}
+
 
 
 //Qn.9
@@ -114,4 +111,33 @@ fun myName(name: String) {
 //Qn.10
 fun temperature(temp: Double) {
     println("The temperature is $temp degrees Celcius")
+
+    //New Questions
+
+    text("Pearl", "Nairobi")
+    sentence("Good morning")
+    nums (arrayOf(10,20,30,40,50))
+
+}
+
+
+//New Questions
+//write a function taking in parameters, name and city and return a string with the sentence 'I am x and I live in y city, where x and y are provided respectively
+
+fun text(name:String, city:String){
+    var sentence=( "I am $name and I live in $city city.")
+    println(sentence)
+}
+
+//Write a function that extracts a substring from a given string starting from index 4 to index 6 using the slice function and return it
+fun sentence (word: String):String{
+    return word.slice(4..6)
+
+}
+
+//Write a program that reads in a list of integers and finds the maximum and minimum values in the list.
+
+fun nums(numbers:Array<Int>){
+    println(numbers.minOrNull())
+    println(numbers.maxOrNull())
 }
